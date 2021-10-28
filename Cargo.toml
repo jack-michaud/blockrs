@@ -1,0 +1,19 @@
+[package]
+name = "blockrs"
+version = "0.1.0"
+authors = ["Jack Michaud <mrmichaud42@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "*"
+rust-crypto = "*"
+num-bigint = "*"
+num-traits = "*"
+x25519-dalek = { version = "*", features = ["serde"] }
+rand_core = { features = ["std"], version = "0.5.1" }
+openssl = "0.10.30"
+tokio = { version = "0.2", features = ["full"] }
+serde = { version = "*", features = ["derive"] }
+bincode = "*"
